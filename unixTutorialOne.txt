@@ -1,0 +1,223 @@
+    1  rm test.txt
+    2  rm .hidden
+    3  mkdir htmllesson
+    4  cd firstwebsite
+    5  ..
+    6  cd ..
+    7  cd workspace
+    8  ls
+    9  clear
+   10  cd htmllesson
+   11  touch index.html
+   12  c9 index.html
+   13  mkdir project1TributePage
+   14  cd project1TributePage/
+   15  touch index.html
+   16  c9 index.html 
+   17  touch style.css
+   18  c9 style.css 
+   19  git
+   20  git init
+   21  git status
+   22  git add .
+   23  git status
+   24  git commit -m "add index.html and style.css" 
+   25  git status
+   26  ..
+   27  cd project1TributePage/
+   28  git remote add origin git@github.com:surekhasrinivasan/Project1TributePage.git
+   29  git status
+   30  git push -u origin master
+   31  git status
+   32  cd..
+   33  cd ..
+   34  clear
+   35  mkdir homework1
+   36  touch addTwoNumbers.js
+   37  c9 addTwoNumbers.js 
+   38  git 
+   39  clear
+   40  cd homework1
+   41  git
+   42  git init
+   43  git status
+   44  git add addTwoNumbers.js
+   45  git add .
+   46  git status
+   47  cd hello
+   48  git commit
+   49  git tag v1
+   50  git checkout v1^
+   51  git status
+   52  cd ..
+   53  clear
+   54  git config --global user.name "surekha" 
+   55  git config --global user.email "surekhasrao@gmail.com" 
+   56  mkdir hello
+   57  cd hello
+   58  touch hello.rb
+   59  c9 hello.rb 
+   60  puts "Hello, World"
+   61  echo "puts "Hello, World""
+   62  git init
+   63  git add hello.rb
+   64  git status
+   65  git commit -m "First Commit"
+   66  git status
+   67  echo "puts "Hello, #{ARGV.first}!" "
+   68  git status
+   69  git add hello.rb
+   70  git status
+   71  git commit
+   72  git status
+   73  git commit
+   74  git config --global user.name "surekha"
+   75  git config --global user.email "surekhasrao@gmail.com"
+   76  cd hello
+   77  git status
+   78  git add hello.rb
+   79  git status
+   80  git commit -m "Added a default value"
+   81  git status
+   82  git add .
+   83  git status
+   84  git commit -m "Added a comment"
+   85  git status
+   86  git log
+   87  git status
+   88  git log --pretty=oneline
+   89  git commit -m "Added a comment"
+   90  git log --pretty=oneline --max-count=2
+   91  git log --pretty=oneline --since='5 minutes ago'
+   92  git log --pretty=oneline --until='5 minutes ago'
+   93  git log --pretty=oneline --author=<surekha>
+   94  git log --pretty=oneline --all
+   95  git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+   96  git push -u origin master
+   97  git hist
+   98  cd ..
+   99  .gitconfig
+  100  cd workspace
+  101  cd hello
+  102  git log --pretty=oneline
+  103  git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  104  git checkout <hash>
+  105  git checkout master
+  106  cat hello.rb
+  107  git tag v1
+  108  git checkout v1^
+  109  cat hello.rb
+  110  git tag v1-beta
+  111  git checkout v1
+  112  git checkout v1-beta
+  113  git tag
+  114  git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  115  git hist --all
+  116  git hist master --all
+  117  git checkout master
+  118  git status
+  119  git checkout hello.rb
+  120  git status
+  121  cat hello.rb
+  122  git add .
+  123  git add hello.rb
+  124  git status
+  125  git reset HEAD hello.rb
+  126  git checkout hello.rb
+  127  git status
+  128  git add hello.rb
+  129  git commit -m "Oops, we didn't want this commit"
+  130  git revert HEAD
+  131  git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  132  git tag oops
+  133  git reset --hard v1
+  134  git history
+  135  git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  136  git tag -d oops
+  137  git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  138  git add hello.rb
+  139  git commit -m "Add an author comment"
+  140  git add hello.rb
+  141  git commit --amend -m "Add an author/email comment"
+  142  git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  143  mkdir lib
+  144  git mv hello.rb lib
+  145  git status
+  146  git commit -m "Moved hello.rb to lib"
+  147  git status
+  148  gem install rake
+  149  touch Rakefile
+  150  c9 Rakefile 
+  151  git add Rakefile
+  152  git commit -m "Added a Rakefile."
+  153  rake
+  154  ls -C .git
+  155  ls -C .git/objects
+  156  ls -C .git/objects/<dir>
+  157  ls -C .git/objects/dir
+  158  cat .git/config
+  159  ls .git/refs
+  160  ls .git/refs/heads
+  161  ls .git/refs/tags
+  162  ls .git/refs/remotes
+  163  ls .git/refs/tags/v1
+  164  ls .git/HEAD
+  165  cat .git/HEAD
+  166  git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  167  git cat-file -t 
+  168  git cat-file -p <treehash>
+  169  git cat-file -p <libhash>
+  170  git checkout -b greet
+  171  git status
+  172  git lib/greeter.rb
+  173  touch lib/greeter.rb
+  174  c9 lib/greeter.rb 
+  175  git add lib/greeter.rb
+  176  git commit -m "Added greeter class"
+  177  git add lib/hello.rb
+  178  git commit -m "Hello uses Greeter"
+  179  git add Rakefile
+  180  git commit -m "Updated Rakefile"
+  181  git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  182  git checkout master
+  183  cat lib/hello.rb
+  184  git checkout greet
+  185  cat lib/hello.rb
+  186  git checkout master
+  187  touch README
+  188  c9 README 
+  189  git add README
+  190  git commit -m "Added README"
+  191  git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  192  git checkout greet
+  193  git merge master
+  194  CD TributePageModified/
+  195  cd TributePageModified/
+  196  cd ..
+  197  ls
+  198  ls -a
+  199  mkdir unixstuff
+  200  ls
+  201  cd unixstuff/
+  202  ls
+  203  mkdir backups
+  204  ls
+  205  ls -a
+  206  cd .
+  207  cd ..
+  208  cd
+  209  pwd
+  210  cd workspace
+  211  cd
+  212  ls unixstuff
+  213  cd workspace
+  214  ls unixstuff/
+  215  ls backups
+  216  ls unixstuff/backups
+  217  ls ~/unixstuff/
+  218  ls ~/unixstuff
+  219  ls ~
+  220  ls ~/..
+  221  cd unixstuff
+  222  history > unixTutorialOne.txt
+11/1/17
